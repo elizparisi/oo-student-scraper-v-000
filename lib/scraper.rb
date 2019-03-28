@@ -12,10 +12,10 @@ class Scraper
     student_location = info.css(".student-location").text
     student_pro_url = "#{info.attr('href')}"
         
-    student_arr << {:name => student_name, :location => student_location, :profile_url => student_pro_url}
+    student_array << {:name => student_name, :location => student_location, :profile_url => student_pro_url}
     end 
   end
-    student_arr
+    student_array
 end
 
   def self.scrape_profile_page(profile_url)
