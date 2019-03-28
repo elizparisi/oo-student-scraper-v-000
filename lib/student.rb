@@ -21,6 +21,7 @@ class Student
       self.send("#{attribute}=", value)
     end 
       self 
+    end
   end
 
   def self.all
